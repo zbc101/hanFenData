@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PerfectIdentityInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-bP-y53">
+                        <rect key="frame" x="16" y="4" width="343" height="41"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ky-Yy-75i">
+                                <rect key="frame" x="16" y="0.0" width="213" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-Zb-yQW">
+                                <rect key="frame" x="249" y="12" width="70" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="VGq-7S-Nhn"/>
+                                    <constraint firstAttribute="height" constant="17" id="hld-c3-CZ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.8901960784313725" green="0.63921568627450975" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03_tie_03_icon01" translatesAutoresizingMaskIntoConstraints="NO" id="X1G-rn-Wgz">
+                                <rect key="frame" x="322" y="14" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="1jZ-hI-LxK"/>
+                                    <constraint firstAttribute="width" constant="13" id="eAh-eC-HRY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7j9-Zb-yQW" firstAttribute="leading" secondItem="5Ky-Yy-75i" secondAttribute="trailing" constant="20" id="9AN-Ur-M0L"/>
+                            <constraint firstItem="7j9-Zb-yQW" firstAttribute="centerY" secondItem="wrG-bP-y53" secondAttribute="centerY" id="9s9-go-egY"/>
+                            <constraint firstItem="7j9-Zb-yQW" firstAttribute="top" secondItem="wrG-bP-y53" secondAttribute="top" id="CUd-eB-y38"/>
+                            <constraint firstItem="X1G-rn-Wgz" firstAttribute="centerY" secondItem="wrG-bP-y53" secondAttribute="centerY" id="IkY-aP-dyz"/>
+                            <constraint firstItem="5Ky-Yy-75i" firstAttribute="top" secondItem="wrG-bP-y53" secondAttribute="top" id="Qsv-X6-yo6"/>
+                            <constraint firstAttribute="bottom" secondItem="7j9-Zb-yQW" secondAttribute="bottom" id="WFi-G0-TK3"/>
+                            <constraint firstAttribute="bottom" secondItem="5Ky-Yy-75i" secondAttribute="bottom" id="XVi-7h-eWw"/>
+                            <constraint firstItem="5Ky-Yy-75i" firstAttribute="leading" secondItem="wrG-bP-y53" secondAttribute="leading" constant="16" id="eZ6-Q9-6Zy"/>
+                            <constraint firstItem="X1G-rn-Wgz" firstAttribute="leading" secondItem="7j9-Zb-yQW" secondAttribute="trailing" constant="3" id="rkL-uL-Z9m"/>
+                            <constraint firstAttribute="trailing" secondItem="X1G-rn-Wgz" secondAttribute="trailing" constant="8" id="tH6-fW-tKF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CUd-eB-y38"/>
+                                <exclude reference="WFi-G0-TK3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="wrG-bP-y53" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="3AZ-A7-X49"/>
+                    <constraint firstAttribute="bottom" secondItem="wrG-bP-y53" secondAttribute="bottom" constant="4" id="Dyj-Wq-9W4"/>
+                    <constraint firstAttribute="trailing" secondItem="wrG-bP-y53" secondAttribute="trailing" constant="16" id="Mgc-Pg-NPn"/>
+                    <constraint firstItem="wrG-bP-y53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wBC-lP-Un1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageIndexDetail" destination="X1G-rn-Wgz" id="8pb-z0-sRb"/>
+                <outlet property="labelDetail" destination="7j9-Zb-yQW" id="vDk-Hb-vp6"/>
+                <outlet property="textfiledTitile" destination="5Ky-Yy-75i" id="vk5-3B-G6b"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="03_tie_03_icon01" width="13" height="13"/>
+    </resources>
+</document>

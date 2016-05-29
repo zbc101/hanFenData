@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyBankCardsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWs-23-FPh">
+                        <rect key="frame" x="16" y="8" width="343" height="83"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03_tie_02_icon02" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-6F-asC">
+                                <rect key="frame" x="21" y="8" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cFP-6F-asC" secondAttribute="height" multiplier="1:1" id="ekZ-ZV-ZXM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-3Z-J8K">
+                                <rect key="frame" x="85" y="15" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.82242398648648651" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="储蓄卡" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puN-nc-Ips">
+                                <rect key="frame" x="276" y="15" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="r4c-h9-aeu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="0.82242398650000004" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="257925792759759" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ds-NJ-xgf">
+                                <rect key="frame" x="92" y="38" width="243" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="0.82242398650000004" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72941176470588232" green="0.23137254901960785" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cFP-6F-asC" firstAttribute="leading" secondItem="CWs-23-FPh" secondAttribute="leading" constant="21" id="2GE-n6-3LM"/>
+                            <constraint firstItem="6ds-NJ-xgf" firstAttribute="top" secondItem="puN-nc-Ips" secondAttribute="bottom" constant="2" id="CpB-a7-auU"/>
+                            <constraint firstItem="6ds-NJ-xgf" firstAttribute="top" secondItem="GpH-3Z-J8K" secondAttribute="bottom" constant="2" id="Jgc-se-ahC"/>
+                            <constraint firstItem="cFP-6F-asC" firstAttribute="top" secondItem="CWs-23-FPh" secondAttribute="top" constant="8" id="Lmb-Bc-zep"/>
+                            <constraint firstItem="6ds-NJ-xgf" firstAttribute="leading" secondItem="cFP-6F-asC" secondAttribute="trailing" constant="20" id="O1N-3I-S7J"/>
+                            <constraint firstAttribute="trailing" secondItem="6ds-NJ-xgf" secondAttribute="trailing" constant="8" id="RHw-eR-XaB"/>
+                            <constraint firstItem="6ds-NJ-xgf" firstAttribute="top" secondItem="puN-nc-Ips" secondAttribute="bottom" constant="2" id="SJu-xW-a4D"/>
+                            <constraint firstItem="puN-nc-Ips" firstAttribute="top" secondItem="CWs-23-FPh" secondAttribute="top" constant="15" id="fXu-1A-IXs"/>
+                            <constraint firstAttribute="bottom" secondItem="cFP-6F-asC" secondAttribute="bottom" constant="24" id="ffr-RS-dqz"/>
+                            <constraint firstItem="GpH-3Z-J8K" firstAttribute="leading" secondItem="cFP-6F-asC" secondAttribute="trailing" constant="13" id="h3M-Ph-Uy3"/>
+                            <constraint firstAttribute="trailing" secondItem="puN-nc-Ips" secondAttribute="trailing" constant="14" id="jTS-A2-vFq"/>
+                            <constraint firstItem="puN-nc-Ips" firstAttribute="leading" secondItem="GpH-3Z-J8K" secondAttribute="trailing" id="kL0-V7-XmQ"/>
+                            <constraint firstItem="GpH-3Z-J8K" firstAttribute="top" secondItem="CWs-23-FPh" secondAttribute="top" constant="15" id="maG-Ci-SAu"/>
+                            <constraint firstAttribute="bottom" secondItem="6ds-NJ-xgf" secondAttribute="bottom" constant="8" id="q37-PI-k1T"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CWs-23-FPh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="FrI-2N-dX8"/>
+                    <constraint firstAttribute="bottom" secondItem="CWs-23-FPh" secondAttribute="bottom" constant="8" id="XBY-2k-xfZ"/>
+                    <constraint firstAttribute="trailing" secondItem="CWs-23-FPh" secondAttribute="trailing" constant="16" id="cGT-7W-A31"/>
+                    <constraint firstItem="CWs-23-FPh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ftf-c0-bGz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="347.5" y="372"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="03_tie_02_icon02" width="41" height="41"/>
+    </resources>
+</document>

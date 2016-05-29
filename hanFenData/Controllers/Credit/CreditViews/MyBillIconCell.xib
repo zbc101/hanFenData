@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyBillIconCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02_home_icon10" translatesAutoresizingMaskIntoConstraints="NO" id="m78-AB-lUh">
+                        <rect key="frame" x="16" y="16" width="73" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="NmP-W3-9xR"/>
+                            <constraint firstAttribute="width" constant="73" id="w4n-4c-ax4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发薪贷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beV-1X-ash">
+                        <rect key="frame" x="105" y="16" width="141" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="141" id="sp7-nI-cNO"/>
+                            <constraint firstAttribute="height" constant="21" id="x5l-Js-Mog"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="借款金额:1000元       借款期限:3个月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyT-Ge-rGC">
+                        <rect key="frame" x="105" y="39" width="270" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vGX-IW-sTh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HyT-Ge-rGC" firstAttribute="leading" secondItem="m78-AB-lUh" secondAttribute="trailing" constant="16" id="1zG-CS-uhZ"/>
+                    <constraint firstItem="HyT-Ge-rGC" firstAttribute="top" secondItem="beV-1X-ash" secondAttribute="bottom" constant="2" id="8rM-sv-fPn"/>
+                    <constraint firstItem="beV-1X-ash" firstAttribute="leading" secondItem="m78-AB-lUh" secondAttribute="trailing" constant="16" id="aJD-XD-nP0"/>
+                    <constraint firstAttribute="trailing" secondItem="HyT-Ge-rGC" secondAttribute="trailing" id="aME-C5-RAo"/>
+                    <constraint firstItem="m78-AB-lUh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="bzR-xr-E0o"/>
+                    <constraint firstItem="beV-1X-ash" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="fy0-uf-JlT"/>
+                    <constraint firstAttribute="bottom" secondItem="m78-AB-lUh" secondAttribute="bottom" constant="16" id="m4Y-ix-rgc"/>
+                    <constraint firstItem="m78-AB-lUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vSO-HO-pwd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="463.5" y="338"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="02_home_icon10" width="62" height="62"/>
+    </resources>
+</document>

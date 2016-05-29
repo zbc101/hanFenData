@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineIcontitleViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="vUx-EX-mnP">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6wG-bd-och"/>
+                        <outlet property="delegate" destination="-1" id="HfA-PN-ot8"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vUx-EX-mnP" secondAttribute="bottom" id="Dtz-aG-0TC"/>
+                <constraint firstItem="vUx-EX-mnP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ISi-Oq-J4U"/>
+                <constraint firstItem="vUx-EX-mnP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MuX-zW-ty1"/>
+                <constraint firstItem="vUx-EX-mnP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="299" id="TkT-Sj-Nb1"/>
+                <constraint firstAttribute="trailing" secondItem="vUx-EX-mnP" secondAttribute="trailing" id="ZsG-SE-Jzm"/>
+                <constraint firstItem="vUx-EX-mnP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="135" id="haQ-v0-LjP"/>
+                <constraint firstAttribute="bottom" secondItem="vUx-EX-mnP" secondAttribute="bottom" constant="240" id="i2Q-Pm-fMC"/>
+                <constraint firstAttribute="trailing" secondItem="vUx-EX-mnP" secondAttribute="trailing" id="s65-G4-Jl9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="TkT-Sj-Nb1"/>
+                    <exclude reference="ZsG-SE-Jzm"/>
+                    <exclude reference="haQ-v0-LjP"/>
+                    <exclude reference="i2Q-Pm-fMC"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

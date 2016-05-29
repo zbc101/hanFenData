@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CreditTopTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成问题验证，获取最新报告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8et-xP-0yM">
+                        <rect key="frame" x="85" y="30" width="205" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hKJ-fs-kli"/>
+                            <constraint firstAttribute="width" constant="205" id="xr0-n8-E3Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-D8-7vX">
+                        <rect key="frame" x="107" y="8" width="161" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10分钟内" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kE-c0-3k6">
+                                <rect key="frame" x="26" y="3" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="OgR-cV-zhc"/>
+                                    <constraint firstAttribute="height" constant="21" id="cOz-dV-iH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.89803921568627454" green="0.67843137254901964" blue="0.32156862745098042" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNF-Ay-T6O">
+                                <rect key="frame" x="0.0" y="3" width="26" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L77-eU-FmF"/>
+                                    <constraint firstAttribute="width" constant="26" id="pz3-af-r6m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成以下问题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJl-Lu-urv">
+                                <rect key="frame" x="83" y="3" width="78" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="Ksk-Sg-dCW"/>
+                                    <constraint firstAttribute="height" constant="21" id="csE-H8-qDu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6kE-c0-3k6" firstAttribute="top" secondItem="0hN-D8-7vX" secondAttribute="top" constant="3" id="4qQ-tp-mtu"/>
+                            <constraint firstAttribute="width" constant="161" id="8Xk-oU-gRH"/>
+                            <constraint firstItem="6kE-c0-3k6" firstAttribute="leading" secondItem="XNF-Ay-T6O" secondAttribute="trailing" id="HuV-Fx-WUl"/>
+                            <constraint firstAttribute="height" constant="25" id="IPS-hO-FPn"/>
+                            <constraint firstItem="XNF-Ay-T6O" firstAttribute="top" secondItem="0hN-D8-7vX" secondAttribute="top" constant="3" id="QM5-Mt-8x9"/>
+                            <constraint firstItem="UJl-Lu-urv" firstAttribute="leading" secondItem="6kE-c0-3k6" secondAttribute="trailing" constant="1" id="RL7-2g-VNn"/>
+                            <constraint firstItem="UJl-Lu-urv" firstAttribute="top" secondItem="0hN-D8-7vX" secondAttribute="top" constant="3" id="kSJ-qz-S2X"/>
+                            <constraint firstItem="XNF-Ay-T6O" firstAttribute="leading" secondItem="0hN-D8-7vX" secondAttribute="leading" id="tGy-4X-qxw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0hN-D8-7vX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="AvU-XY-dZE"/>
+                    <constraint firstItem="0hN-D8-7vX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gLD-Vy-Vfb"/>
+                    <constraint firstItem="8et-xP-0yM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="q4B-6U-X7u"/>
+                    <constraint firstAttribute="bottom" secondItem="8et-xP-0yM" secondAttribute="bottom" constant="8" id="qeM-lz-Vpj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="260.5" y="359"/>
+        </tableViewCell>
+    </objects>
+</document>
